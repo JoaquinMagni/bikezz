@@ -1,4 +1,13 @@
+// next.config.mjs
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const config = {
+    images: {
+        remotePatterns: [
+            {
+                hostname: 'cdn.sanity.io',
+            },
+        ],
+    },
+};
 
-export default nextConfig;
+export default config;
